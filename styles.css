@@ -39,13 +39,14 @@
     width: 100%;
     display: inline;
     object-fit: cover;
+    padding: 0;
   }
 
   .container {
     display: flex;
   }
 
-  #bodyArticle{
+  .bodyArticle{
     display: flex;
     flex-direction: column;
     padding: 0 5%;
