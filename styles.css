@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Silkscreen:wght@400;700&family=Yarndings+20&display=swap');
 
+
 .silkscreen-regular {
     font-family: "Silkscreen", serif;
     font-weight: 400;
@@ -33,12 +34,67 @@
   .link-tree{
     font-size: 150%;
   }
+
+  .pcImage{
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  #bodyArticle{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  #header{
+    width: 100%;
+    text-align: center;
+  
+  }
+
+  #madeBy {
+  position: absolute;
+  bottom: 0;
+  padding-left: 2em;
+  }
+
   body{
     height: 100%;
     background: rgb(217,233,251);
     background: linear-gradient(180deg, rgba(217,233,251,1) 0%, rgba(170,94,201,1) 100%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  footer {
+    height: 0%;
+    font-size: 40%;
+    align-content: right;
+    padding: 0 5% 0 0 ;
+  }
+
+
+
+  @media only screen and (min-width: 750px){
+    .pcImage {
+      width: 50%
+    }
+
+    #bodyArticle{
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      padding: 15% 5% 0% 5%;
+    }
+ 
+
+    #bodyArticle p{
+    text-align: center;
+    }
   }
 
 
